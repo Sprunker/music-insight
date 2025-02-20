@@ -37,6 +37,9 @@ RUN ls -la  # Debug: Listar archivos
 
 # Make sure that the 'download_test.sh' script is executable and run it
 RUN chmod +x download_test.sh
+
+RUN ls -la  # Debug: Listar archivos
+
 RUN ./download_test.sh
 
 # Expose the port that the application will run on
