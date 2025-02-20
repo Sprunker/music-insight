@@ -33,6 +33,7 @@ WORKDIR /app
 
 # Clone the GitHub repository (uncomment if necessary)
 RUN git clone https://github.com/Sprunker/music-insight.git .
+RUN ls -la  # Debug: Listar archivos
 
 # Make sure that the 'download_test.sh' script is executable and run it
 RUN chmod +x download_test.sh
