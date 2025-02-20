@@ -34,9 +34,9 @@ WORKDIR /app
 # Clone the GitHub repository (uncomment if necessary)
 RUN git clone https://github.com/Sprunker/music-insight.git .
 
-# Make sure that the 'download.sh' script is executable and run it
-RUN chmod +x download.sh
-RUN ./download.sh
+# Make sure that the 'download_test.sh' script is executable and run it
+RUN chmod +x download_test.sh
+RUN ./download_test.sh
 
 # Expose the port that the application will run on
 EXPOSE 8000
