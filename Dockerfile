@@ -39,7 +39,6 @@ RUN chmod +x download.sh
 RUN ./download.sh
 
 # Expose the port that the application will run on
-
 EXPOSE 8000
 
 # Define the command to run your FastAPI application
