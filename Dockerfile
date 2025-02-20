@@ -35,8 +35,8 @@ WORKDIR /app
 RUN git clone https://github.com/Sprunker/music-insight.git .
 
 # Make sure that the 'download.sh' script is executable and run it
-# RUN chmod +x download.sh
-# RUN ./download.sh
+RUN chmod +x download.sh
+RUN ./download.sh
 
 # Expose the port that the application will run on
 
