@@ -35,11 +35,12 @@ WORKDIR /app
 RUN git clone https://github.com/Sprunker/music-insight.git .
 
 # Make sure that the 'download.sh' script is executable and run it
-RUN chmod +x download.sh
-RUN ./download.sh
+# RUN chmod +x download.sh
+# RUN ./download.sh
 
 # Expose the port that the application will run on
+
 EXPOSE 8000
 
 # Define the command to run your FastAPI application
-CMD ["uvicorn", "musicInsight_api:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "music_insight_api:app", "--host", "0.0.0.0", "--port", "8000"]
